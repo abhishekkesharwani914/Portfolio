@@ -1,0 +1,185 @@
+:root {
+  font-family: "Montserrat", Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #f8f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import "tailwindcss";
+
+.caveat-logo {
+  font-family: "Qwitcher Grypen", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Home page animations */
+.slide-right {
+  animation: slideRight 0.5s ease-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 0.5s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.3s; }
+.stagger-3 { animation-delay: 0.5s; }
+.stagger-4 { animation-delay: 0.7s; }
+.stagger-5 { animation-delay: 0.9s; }
+.stagger-6 { animation-delay: 1.1s; }
+.stagger-7 { animation-delay: 1.3s; }
+/* .stagger-8 { animation-delay: 1.5s; }
+.stagger-9 { animation-delay: 1.7s; }
+.stagger-10 { animation-delay: 1.9s; } */
+
+/* About Page Animations */
+
+.slide-left2 {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.slide-left2.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right2 {
+  opacity: 0;
+  transform: translateX(400px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.slide-right2.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Work Page */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e2eddf !important; /* Your desired color */
+  
+}
+
+.swiper-pagination-bullet-active {
+  background: #286f6b !important;
+}
+
+@media screen and (max-width: 540px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important; /* completely hide on small screens */
+  }
+}
+
+
