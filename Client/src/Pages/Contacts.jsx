@@ -44,9 +44,21 @@ const Contacts = (props) => {
         });
         toast.success(res.data.message);
       } else {
+        setFormData({
+          name: '',
+          email: '',
+          contact: '',
+          message: ''
+        });
         toast.error("Failed to submit query.");
       }
     } catch (error) {
+      setFormData({
+          name: '',
+          email: '',
+          contact: '',
+          message: ''
+        });
       toast.error("Failed to submit query.");
     }
   };
