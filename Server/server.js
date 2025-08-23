@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000;
 const queryRoute = require("./routes/query.js");
 
 main();
+console.log(process.env.MONGO_URL);
 
 const corsOption = {
     origin: process.env.FRONTEND_URL,
