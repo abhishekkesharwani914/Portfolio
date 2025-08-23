@@ -55,7 +55,7 @@ function Home(props) {
             <a href="https://www.facebook.com/abhishek.kesharwani.1213986" className={`${icons} text-blue-700 hover:text-blue-700 stagger-5`}><i className="fa-brands fa-facebook"></i></a>
           </div>
           <div className="mt-10 flex flex-col md:flex-row sm:flex-row gap-6 md:gap-10 ">
-            <a href="#" className={`${btns} stagger-6`}>View my work</a>
+            <a href="#work" className={`${btns} stagger-6`}>View my work</a>
             <a href="/Abhishek_Kesharwani_Resume.pdf" onClick={handleResumeDownload} download  className={`${btns} stagger-7`}>Download my Resume</a>
           </div>
         </div>
