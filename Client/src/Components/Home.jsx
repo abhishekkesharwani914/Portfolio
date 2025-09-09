@@ -48,11 +48,11 @@ function Home(props) {
             Let’s create something amazing together.
           </p>
           <div className="mt-10 flex flex-row gap-4 md:gap-6 sm:gap-6 ">
-            <a href="https://github.com/abhishekkesharwani914" className={`${icons} text-black hover:text-black stagger-1`}><i className="fa-brands fa-github "></i></a>
-            <a href="https://www.linkedin.com/in/abhishek-kesharwani-5019b4215/" className={`${icons} text-blue-700 hover:text-blue-700 stagger-2`}><i className="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://x.com/Abhishe64111743" className={`${icons} text-black hover:text-black stagger-3`}><i className="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/_a.b.h.i.s.h.e.k_001_official/" className={`${icons} text-pink-700 hover:text-pink-700 stagger-4`}><i className="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/abhishek.kesharwani.1213986" className={`${icons} text-blue-700 hover:text-blue-700 stagger-5`}><i className="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/abhishekkesharwani914" target="_blank" rel="noopener noreferrer" className={`${icons} text-black hover:text-black stagger-1`}><i className="fa-brands fa-github "></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-kesharwani-5019b4215/" target="_blank" rel="noopener noreferrer" className={`${icons} text-blue-700 hover:text-blue-700 stagger-2`}><i className="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/Abhishe64111743" target="_blank" rel="noopener noreferrer" className={`${icons} text-black hover:text-black stagger-3`}><i className="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/_a.b.h.i.s.h.e.k_001_official/" target="_blank" rel="noopener noreferrer" className={`${icons} text-pink-700 hover:text-pink-700 stagger-4`}><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/abhishek.kesharwani.1213986" target="_blank" rel="noopener noreferrer" className={`${icons} text-blue-700 hover:text-blue-700 stagger-5`}><i className="fa-brands fa-facebook"></i></a>        
           </div>
           <div className="mt-10 flex flex-col md:flex-row sm:flex-row gap-6 md:gap-10 ">
             <a href="#work" className={`${btns} stagger-6`}>View my work</a>
@@ -63,7 +63,7 @@ function Home(props) {
         {/* Right Content */}
         <div className="right-content flex flex-row items-center justify-center slide-right mt-5 lg:mt-0">
           <div className="image-container flex flex-col items-center justify-center h-auto w-auto">
-            <img className="" src="/img2.png" alt="Description 2" />
+            <img className="" src="/img2.png" alt="right image" loading="lazy"/>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 import { useInView } from '../Hooks/useInView';
+const ProjectCard = React.lazy(() => import('./ProjectCard'));
 
 const projects = [
   {
@@ -67,12 +68,12 @@ const Work = () => {
           grabCursor={true}
           centeredSlides={true}
           coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
           loop={true}
           spaceBetween={32}
           slidesPerView={'auto'}
@@ -91,24 +92,9 @@ const Work = () => {
         >
           {projects.map((project, idx) => (
             <SwiperSlide key={idx}>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-w-[340px] max-w-md bg-white rounded-xl shadow-lg p-6 flex-shrink-0 transform transition duration-300 hover:z-20 flex flex-col items-center"
-                style={{ 
-                  height: '430px' 
-                }}
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="swiper-lazy w-full h-56 object-cover rounded-lg mb-4 shadow-[#286f6b] shadow-2xl/30"
-                />
-                <div className="swiper-lazy-preloader"></div>
-                <h2 className="text-2xl font-semibold text-[#286f6b] mb-2">{project.title}</h2>
-                <p className="text-gray-600 text-base">{project.description}</p>
-              </a>
+              <Suspense fallback={<div className="w-full h-full flex items-center justify-center">Loading...</div>}>
+                <ProjectCard project={project} />
+              </Suspense>
             </SwiperSlide>
           ))}
         </Swiper>

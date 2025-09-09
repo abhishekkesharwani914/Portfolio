@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Abhishek's Portfolio",
   "license": "MIT",
   "author": "Abhishek Kesharwani",
@@ -11,6 +11,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
