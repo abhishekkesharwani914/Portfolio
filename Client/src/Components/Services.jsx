@@ -13,12 +13,12 @@ const serviceIcons = [
 
 // Example background images (use your own images in public/)
 const serviceBackgrounds = [
-  "/webdevelopment.jpeg",
-  "/uiux.jpeg",
-  "/resume.jpeg",
-  "/presentation.jpeg",
-  "/video.jpeg",
-  "/socialmedia.jpeg"
+  "/webdevelopment.webp",
+  "/uiux.webp",
+  "/resume.webp",
+  "/presentation.webp",
+  "/video.webp",
+  "/socialmedia.webp"
 ];
 
 const services = [

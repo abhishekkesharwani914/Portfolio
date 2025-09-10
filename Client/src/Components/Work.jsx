@@ -12,37 +12,37 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "Personal portfolio built with MERN Stack.",
-    image: "/Portfolio.png",
+    image: "/Portfolio.webp",
     link: "#"
   },
   {
     title: "Chat GPT Clone",
     description: "ChatGPT clone is a clone of ChatGPT developed using React.js, TypeScript, and an API key.",
-    image: "/ChatGPTClone.png",
+    image: "/ChatGPTClone.webp",
     link: "https://chat-gpt-clone-vert-phi.vercel.app/"
   },
   {
     title: "Kalakriti E-Commerce",
     description: "Multi-user e-commerce website built with the MERN stack that sells furniture with authentication and authorization.",
-    image: "/Kalakriti.png",
+    image: "/Kalakriti.webp",
     link: "https://kalakriti-mern.vercel.app/"
   },
   {
     title: "Wanderlust",
     description: "Wanderlust is a web app like Airbnb through which we can see hotels, rooms, and so on. Developed a website using MERN Stack Development",
-    image: "/Wanderlust.png",
+    image: "/Wanderlust.webp",
     link: "https://wanderlust-kbpq.onrender.com/listings"
   },
   {
     title: "Weather App",
     description: "A website that gives the real-time weather report of a searched city with images according to the weather. Developed using React.js.",
-    image: "/WeatherApp.png",
+    image: "/WeatherApp.webp",
     link: "https://react-project-blue-mu.vercel.app/"
   },
   {
     title: "Quiz App",
     description: "A web app that allows users to take quizzes on various topics.",
-    image: "/Quiz.png",
+    image: "/Quiz.webp",
     link: "https://quiz-app-tau-gray.vercel.app/"
   }
 ];

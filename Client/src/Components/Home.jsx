@@ -56,14 +56,14 @@ function Home(props) {
           </div>
           <div className="mt-10 flex flex-col md:flex-row sm:flex-row gap-6 md:gap-10 ">
             <a href="#work" className={`${btns} stagger-6`}>View my work</a>
-            <a href="/Abhishek_Kesharwani_Resume.pdf" onClick={handleResumeDownload} download  className={`${btns} stagger-7`}>Download my Resume</a>
+            <a href="/Abhishek_Kesharwani_SWE_Resume.pdf" onClick={handleResumeDownload} download  className={`${btns} stagger-7`}>Download my Resume</a>
           </div>
         </div>
 
         {/* Right Content */}
         <div className="right-content flex flex-row items-center justify-center slide-right mt-5 lg:mt-0">
           <div className="image-container flex flex-col items-center justify-center h-auto w-auto">
-            <img className="" src="/img2.png" alt="right image" loading="lazy"/>
+            <img className="" src="/img2.webp" alt="right image" loading="lazy"/>
           </div>
         </div>
       </div>

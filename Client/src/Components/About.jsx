@@ -37,7 +37,7 @@ function About(props) {
         <p className='text-base md:text-lg lg:text-xl text-center text-[#e2eddf]'>I'm a passionate Software Engineer with expertise in Full Stack Development. With a solid background in both frontend (React, Next.js) and backend (Node.js, Express, MongoDB, PostgreSQL), I bring technical depth and design-driven thinking to every project. My journey began with a Computer Science degree and has evolved into a portfolio of real-world applications, freelance work, and certifications from top platforms.</p>
       </div>
       <div ref={rightRef} className={`flex items-center justify-end mt-10 lg:mt-0 fade-up${rightVisible ? " visible" : ""}`}>
-        <img src="/profile.jpg" className='rounded-full w-70 h-70 lg:w-110 lg:h-110 md:w-90 md:h-90 object-cover shadow-[#e2eddf] shadow-2xl' alt="My Image" loading="lazy"/>
+        <img src="/profile.webp" className='rounded-full w-70 h-70 lg:w-110 lg:h-110 md:w-90 md:h-90 object-cover shadow-[#e2eddf] shadow-2xl' alt="profile" loading="lazy"/>
       </div>
     </div>
   )
