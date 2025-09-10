@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import { ReactTyped } from "react-typed";
 import "../index.css";
 import { toast } from "react-toastify";
+const Profile = React.lazy(() => import("./ProfileImg"));
 
 
 function Home(props) {
@@ -62,9 +63,9 @@ function Home(props) {
 
         {/* Right Content */}
         <div className="right-content flex flex-row items-center justify-center slide-right mt-5 lg:mt-0">
-          <div className="image-container flex flex-col items-center justify-center h-auto w-auto">
-            <img className="" src="/img2.webp" alt="right image" loading="lazy"/>
-          </div>
+          <React.Suspense fallback={<div className="w-32 h-32 border-4 border-dashed rounded-full animate-spin border-[#286f6b]"></div>}>
+            <Profile />
+          </React.Suspense>
         </div>
       </div>
     </>
